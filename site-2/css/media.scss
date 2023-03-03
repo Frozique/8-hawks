@@ -1,0 +1,182 @@
+@media (max-width: 1030px) {
+    .special-offers {
+        .container {
+            .special-offers__list {
+                justify-content: center;
+                .list-item {
+
+                    &:nth-child(2n) {
+                        margin-right: 0;
+                    }
+                    &:nth-child(3n) {
+                        margin-left: 30px;
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .feedback {
+        .container {
+            flex-direction: column;
+            align-items: center;
+            .feedback__block {
+                margin-bottom: 30px;
+                &:first-child {
+                    margin-right: 0;
+                }
+            }
+    }
+    }
+}
+
+@media (max-width: 870px) {
+
+    .header {
+        &__top {
+            .container {
+                .top__list {
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .list-item {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+        &__bottom {
+            .container {
+                .nav {
+                    &__list {
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .list-item {
+                        margin-bottom: 10px;
+                    }
+                    }
+                }
+            }
+        }
+    }
+
+    .special-offers {
+        .container {
+            .special-offers__list {
+                .list-item {
+                    &:nth-child(2n) {
+                        margin-right: 0;
+                    }
+                    &:nth-child(3n) {
+                        margin-left: 0;
+                        margin-right: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        &__top {
+            .container {
+                flex-direction: column;
+                align-items: center;
+                .top__socials {
+                    margin-bottom: 30px;
+                }
+                .top__middle {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 350px) {
+.header {
+    &__middle {
+        .container {
+            flex-direction: column;
+            justify-content: center;
+            .middle__callback {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                .callback-phone {
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+.hero {
+    background-position: 50%;
+    .container {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.special-offers {
+    margin-bottom: 50px;
+        .container {
+            text-align: center;
+            .special-offers__list {
+                .list-item {
+                    &:not(:last-child) {
+                        margin-right: 0;
+                    }
+                    &:nth-child(2n) {
+                        margin-right: 0;
+                    }
+                    &:nth-child(3n) {
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+.feedback {
+    margin-bottom: 30px;
+    .container {
+
+        .feedback__block {
+            padding: 15px 20px;
+            width: 290px;
+            flex-direction: column;
+            text-align: center;
+            input {
+                margin-bottom: 30px;
+            }
+            .block-btn {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+.footer__top {
+    .container {
+        .top__right {
+            text-align: center;
+            .callback-phone {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+    .footer__bottom {
+        .container {
+            flex-direction: column;
+            .copyright {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

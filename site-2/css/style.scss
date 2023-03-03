@@ -1,0 +1,310 @@
+@import 'common';
+@import 'variables';
+
+.header {
+   &__top {
+    .container {
+        display: flex;
+        justify-content: center;
+        padding: 17px 15px;
+        .top__nav {
+            .top__list {
+                display: flex;
+                .list-item {
+                    margin-right: 30px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+   }
+   &__middle {
+    padding: 40px 15px;
+    background-color: #FFFFFF;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .middle__logo {
+            display: flex;
+            align-items: center;
+            .logo {
+                margin-right: 20px;
+            }
+        .logo-title {
+            margin: 0;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 42px;
+            letter-spacing: 0.1em;
+            color: $green;
+        }
+    }
+    .middle__callback {
+        .callback-phone {
+            margin-right: 40px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+        }
+        .callback-btn {
+            background-color: white;
+            padding: 13px 26px;
+            border: 2px solid #66C05D; 
+            border-radius: 40px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+    }
+   }
+   &__bottom {
+    background-color: #fff;
+    .container {
+        padding: 30px 15px;
+        display: flex;
+        justify-content: center;
+        .nav {
+            &__list {
+                display: flex;
+                .list-item {
+                    margin-right: 40px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+            }
+        }
+    }
+   }
+}
+
+.hero {
+    background-image: url('../img/hero-background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__container {
+        min-height: 604px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .section-title {
+            margin: 0;
+            margin-bottom: 50px;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 56px;
+            color: $white;
+        }
+        .section-descr {
+            margin: 0;
+            margin-bottom: 50px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: $white;
+            max-width: 305px;
+        }
+        .btn-more {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            color: $white;
+            border: 2px solid #FFFFFF;
+            border-radius: 40px;
+            max-width: fit-content;
+        }
+    }
+}
+
+.special-offers {
+    padding-top: 80px;
+    margin-bottom: 100px;
+    .container {
+        .section-title {
+            margin: 0;
+            margin-bottom: 38px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+        }
+        .special-offers__list {
+            display: flex;        
+            flex-wrap: wrap;
+            .list-item {
+                padding: 25px 30px;
+                margin-bottom: 30px;
+                max-width: 255px;
+                background-color: #fff;
+                text-align: center;
+                &:not(:last-child) {
+                    margin-right: 30px;
+                }
+                .offer-block .offer {
+                    &__descr {
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                    &__price {
+                        font-weight: 700;
+                        font-size: 21px;
+                        line-height: 25px;
+                        text-align: center;
+                        letter-spacing: 0.05em;
+                        color: #000;
+                    }
+                    &__btn {
+                        padding: 9px 40px;
+                        background-color: $green;
+                        border-radius: 30px;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 16px;
+                        text-align: center;
+                        letter-spacing: 0.05em;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.feedback {
+    margin-bottom: 132px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        .feedback__block {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 40px;
+            width: 540px;
+            background-color: $green;
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+            &:last-child {
+                .text {
+                    flex-basis: 40%;
+                }
+            }
+            .text {
+                flex-basis: 60%;
+                .block-title {
+                    margin: 0;
+                    margin-bottom: 25px;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: $white;
+                }
+                .block-descr {
+                    margin: 0;
+                    margin-bottom: 25px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: $white;
+                }
+                input {
+                    padding: 9px 0 9px 25px;
+                    border-radius: 30px;
+                    outline: none;
+                    border: none;
+                }
+                .block-btn {
+                    padding: 9px 28px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: $white;
+                    border: 2px solid #FFFFFF;
+                    border-radius: 30px;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    &__top {
+        background-color: #FFFFFF;
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px 15px;
+            .top__socials {
+                display: flex;
+            .svg {
+                width: 45px;
+                height: 45px;
+                margin-right: 20px;
+                border: 2px solid $green;
+                border-radius: 50%;
+                padding: 10px;
+                text-align: center;
+                align-content: center;
+                svg {
+                   width: 22px;
+                   height: 22px;
+                }
+            }
+
+        }
+        .top__middle {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+        }
+        .top__right {
+            .callback-phone {
+                margin-right: 40px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+            }
+            .callback-btn {
+                background-color: white;
+                padding: 13px 26px;
+                border: 2px solid #66C05D; 
+                border-radius: 40px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+    }
+}
+&__bottom {
+    .container {
+        padding: 25px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .copyright {
+            margin: 0;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            color: #828282;
+        }
+        .confidential {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            color: #828282;
+        }
+    }
+}
+}
