@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <div data-widget-name="menu">Choose the genre</div>
+
+  <script>
+    // получаем элемент
+    let elem = document.querySelector('[data-widget-name]');
+
+    // читаем значение
+    alert(elem.dataset.widgetName);
+    // или так
+    alert(elem.getAttribute('data-widget-name'));
+
+    let links = document.querySelectorAll('a');
+
+for (let link of links) {
+  let href = link.getAttribute('href');
+  if (!href) continue; // нет атрибута
+
+  if (!href.includes('://')) continue; // нет протокола
+
+  if (href.startsWith('http://internal.com')) continue; // внутренняя
+
+  link.style.color = 'orange';
+}
+  </script>
+</body>
+</html>
+
